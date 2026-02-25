@@ -1,0 +1,11 @@
+/* Custom game states toggled by JavaScript */
+
+.game-over {
+  background-color: red !important;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey !important;
+}

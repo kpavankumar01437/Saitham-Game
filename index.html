@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitham Game</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'simon-bg': '#011F3F',
+            'simon-text': '#FEF2BF',
+          },
+          fontFamily: {
+            'press': ['"Press Start 2P"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="text-center bg-simon-bg font-press flex flex-col min-h-screen justify-center items-center">
+  
+  <h1 id="level-title" class="text-simon-text text-3xl md:text-5xl my-8 leading-snug">Press Any Key to Start</h1>
+  
+  <div class="container max-w-lg mx-auto">
+    <div class="row flex justify-center">
+      <div type="button" id="green" class="btn bg-green-600 m-4 inline-block h-36 w-36 md:h-48 md:w-48 border-[10px] border-black rounded-[20%] cursor-pointer active:scale-95 transition-transform"></div>
+      <div type="button" id="red" class="btn bg-red-600 m-4 inline-block h-36 w-36 md:h-48 md:w-48 border-[10px] border-black rounded-[20%] cursor-pointer active:scale-95 transition-transform"></div>
+    </div>
+
+    <div class="row flex justify-center">
+      <div type="button" id="yellow" class="btn bg-yellow-400 m-4 inline-block h-36 w-36 md:h-48 md:w-48 border-[10px] border-black rounded-[20%] cursor-pointer active:scale-95 transition-transform"></div>
+      <div type="button" id="blue" class="btn bg-blue-600 m-4 inline-block h-36 w-36 md:h-48 md:w-48 border-[10px] border-black rounded-[20%] cursor-pointer active:scale-95 transition-transform"></div>
+    </div>
+  </div>
+
+  <footer class="text-simon-text text-sm mt-12 mb-4">Made by LG-1</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+  <script src="game.js" charset="utf-8"></script>
+  
+</body>
+</html>
